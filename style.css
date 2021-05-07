@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body{
+  font-family: 'Lato', sans-serif;
+  background: url("https://tierrasuratherzog.com/wp-content/uploads/2019/05/TS-Wedding-Paper-BG.jpg") fixed center;
+   margin:0 auto;
+  max-width:1200px;
+}
+
+nav{
+  display:flex;
+  justify-content:space-around;
+}
+
+h1{
+  text-align:left;
+  color:#ffffff;
+  font-weight: 1200;
+  font-size: 70px;
+    -webkit-text-stroke: 1px black
+}
+
+h2{
+  text-align:left;
+  color:#000000;
+  font-size: 40px;
+}
+
+h3{
+  color:#573d2c;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: left;
+}
+
+h4{
+  color:#b45444;
+  text-align:left;
+}
+
+h5{
+  text-align:center;
+  color:#000000;
+  font-size: 18px;
+}
+
+a{
+  text-decoration:underline;
+  color:#000000;
+  font-size:22;
+}
+
+a:hover {
+  color: #cdb4db;
+}
+
+input[type=text1] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+input[type=text2] {
+  width: 40px;
+  height: 30px;
+  padding: 10px 10px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+}
+
+input[type=text3] {
+  width: 450px;
+  height: 200px;
+  padding: 10px 10px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80%;
+  height: 5px; 
+  background: #7c7575;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  cursor: pointer;
+}
+
+img{
+  width:95%;
+  border-radius: 30px;
+  border-style: solid;
+}
+
+.gridTitle{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:15px;
+  padding:15px;
+}
+
+.gridDescription{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.gridStats{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:0px;
+  padding:15px;
+}
+
+.gridBackpack{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  padding:15px;
+}
+
+.gridBackstory{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  padding:15px;
+}
+
+.group{
+  border-radius: 20px;
+  align-items: center;
+}
+
+footer{
+  height:20px;
+  background-color:#ffffff;
+  text-align:center;
+}
+
+@media only screen and (max-width:480px){
+  nav{
+    flex-direction:column;
+    justify-content:space-evenly;
+    text-align: center;
+  }
+  a{
+    font-size:12;
+  }
+  h5{
+    font-size:12;
+  }
+  .gridTitle,
+  .gridDescriptions,
+  .gridStats,
+  .gridBackpack,
+  .gridBackstory{
+    grid-template-columns:1fr;
+  }
+  input[type=text3] {
+  width: 375px;
+}
+}
